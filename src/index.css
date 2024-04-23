@@ -1,13 +1,166 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.tickets_card {
+  display: flex;
+  width: 800px;
+  max-height: 250px;
+  height: 250px;
+  min-height: 250px;
+  -webkit-box-shadow: 0px 0px 48px -41px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 48px -41px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 48px -41px rgba(0, 0, 0, 0.75);
+  padding: 15px 50px;
+  margin: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tickets_card .left_hr {
+  height: 100%;
+  width: 1px;
+  margin-left: 20px;
+  margin-right: 40px;
+  background-color: rgb(139, 139, 139);
+  border: none;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left button {
+  max-width: 200px;
+  width: 200px;
+  min-height: 50px;
+  height: auto;
+  max-height: 100px;
+  border: none;
+  background-color: rgb(255, 102, 0);
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.left button:hover {
+  background-color: rgb(219, 88, 0);
+}
+
+.left button:active {
+  background-color: rgb(201, 80, 0);
+  outline: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.departure,
+.arrival {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+.departure h4,
+.arrival h4 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.departure p,
+.arrival p {
+  font-weight: 500;
+}
+.departure span,
+.arrival span {
+  color: rgb(139, 139, 139);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 20%;
+  gap: 20px;
+  align-self: flex-start;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.center p {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgb(139, 139, 139);
+}
+
+.center div {
+  position: relative;
+  width: 70%;
+}
+
+.center div hr {
+  background-color: rgb(139, 139, 139);
+  width: 100%;
+}
+
+.center div img {
+  position: absolute;
+  right: -10px;
+  top: -12px;
+}
+.tickets_list_img {
+  width: 100px;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ticket_list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.menu {
+  box-shadow: 0px 0px 48px -41px rgba(0, 0, 0, 0.75);
+  padding: 15px 50px;
+  height: auto;
+  align-self: flex-start;
+}
+
+.menu .top h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.menu .top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.menu .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
 }
